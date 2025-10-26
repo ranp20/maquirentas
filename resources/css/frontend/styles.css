@@ -1,3 +1,43 @@
+/* MAGICZOOM/ GALERÍA DE IMÁGENES DEL PRODUCTO */
+.cGalleryScroll{
+  overflow-y: hidden;
+  overflow-x: hidden;
+  margin-top: 5px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-flow: row nowrap;
+  position: relative;
+}
+.cGalleryScroll__c{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-y: hidden;
+  overflow-x: auto;
+  flex: 0 0 100%;
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  transition: transform 0.2s ease-in-out;
+}
+@media (min-width: 768px){
+  .cGalleryScroll:hover button.scroll-btn{
+    display: block;
+    transition: all ease-in-out .4s;
+  }
+}
+.cGalleryScroll__c::-webkit-scrollbar{width: 0 !important;height: 0 !important;}
+.cGalleryScroll__c:-webkit-scrollbar-thumb{background-color: transparent !important;}
+.cGalleryScroll__c::-webkit-scrollbar-thumb{background-color: transparent !important;}
+.cGalleryScroll__c::-webkit-scrollbar-track{background-color: transparent !important;}
+.cGalleryScroll__c:-webkit-scrollbar-track{background-color: transparent !important;}
+/*  */
+
+button{
+  cursor: pointer;
+}
+
 #detailModal{
   z-index: 100;
 }
